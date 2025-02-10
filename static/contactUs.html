@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+
+    <section id="contactFormSection">
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="mobile">Mobile:</label>
+            <input type="text" id="mobile" name="mobile" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required rows="4" cols="10"></textarea>
+
+            <button type="button" id="submitBtn">Submit</button>
+        </form>
+    </section>
+
+    <section id="googleMapSection">
+        <h2>Our Location</h2>
+        <div id="googleMap" style="height: 400px; width: 100%;"></div>
+    </section>
+
+    <section id="seeMessagesSection">
+        <button onclick="window.location.href='/seeMessages.html'">See Messages</button>
+    </section>
+</body>
+</html>
